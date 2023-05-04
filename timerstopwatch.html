@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Timer and Stopwatch</title>
+    <style>
+        body{
+                border: 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+            .header{
+                padding: 3px;
+                text-align: center;
+                background-color: darkgreen;
+            }
+            .header h1{
+                font-size: 35px;
+                font-family: 'Times New Roman', Times, serif;
+                color: white
+            }
+            h2{
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+                color: green;
+                text-align: left;
+                margin-left: 10px;
+                text-shadow: 0.5em #3e8e41 ;
+            }
+        .timer-container, .stopwatch-container {
+  display: inline-block;
+  margin: 10px;
+}
+
+.timer, .stopwatch {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.timer span, .stopwatch span {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 0 5px;
+}
+
+.button {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #1e661a;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <h1>Timer and Stopwatch </h1>
+        </div>
+    <h2>Timer & Stopwatch Simple Version</h2>
+    <div class="timer-container">
+      <h1>Timer</h1>
+      <div class="timer">
+        <span class="minutes">00</span>:<span class="seconds">00</span>
+      </div>
+      <button class="start-timer">Start</button>
+      <button class="stop-timer">Stop</button>
+      <button class="reset-timer">Reset</button>
+    </div>
+    
+    <div class="stopwatch-container">
+      <h1>Stopwatch</h1>
+      <div class="stopwatch">
+        <span class="minutes">00</span>:<span class="seconds">00</span>:<span class="milliseconds">00</span>
+      </div>
+      <button class="start-stopwatch">Start</button>
+      <button class="stop-stopwatch">Stop</button>
+      <button class="reset-stopwatch">Reset</button>
+    </div>
+    
+    <script src="scripts.js"></script>
+  </body>
+</html>
